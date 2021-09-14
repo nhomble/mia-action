@@ -9,6 +9,11 @@ inputs:
     description: 'days until error'
     required: false
     default: 7
+
+branding:
+  icon: 'activity'
+  color: 'white'
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
