@@ -1,4 +1,4 @@
-FROM alpine/git:3.10
+FROM alpine/git:latest
 
 COPY entrypoint.sh /entrypoint.sh
 
