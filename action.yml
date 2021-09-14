@@ -1,0 +1,17 @@
+name: 'Missing in Action'
+description: 'check for developers MIA in the git log'
+author: 'nhomble'
+inputs:
+  author:
+    description: 'git author to look for'
+    required: true
+  days:
+    description: 'days until error'
+    required: false
+    default: 7
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.author }}
+    - ${{ inputs.days }}
