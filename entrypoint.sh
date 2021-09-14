@@ -24,7 +24,7 @@ DAY_DIFF=$(($EPOCH_DIFF / (60 * 60 * 24)))
 
 printf "epochDiff=%s dayDiff=%s\n" "$EPOCH_DIFF" "$DAY_DIFF"
 
-if [ $DAY_DIFF -gt $DAYS ]; then
+if [ "$DAY_DIFF" -gt "$DAYS" ]; then
   echo "It's been too many days"
   exit 1
 fi
