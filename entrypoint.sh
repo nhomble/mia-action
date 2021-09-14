@@ -22,7 +22,7 @@ printf "lastEpoch=%s now=%s\n" "$LAST_EPOCH" "$NOW_EPOCH"
 EPOCH_DIFF=$(($NOW_EPOCH - $LAST_EPOCH))
 DAY_DIFF=$(($EPOCH_DIFF / (60 * 60 * 24)))
 
-print "epochDiff=%s dayDiff=%s\n" "$EPOCH_DIFF" "$DAY_DIFF"
+printf "epochDiff=%s dayDiff=%s\n" "$EPOCH_DIFF" "$DAY_DIFF"
 
 if [ $DAY_DIFF -gt $DAYS ]; then
   echo "It's been too many days"
