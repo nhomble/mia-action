@@ -9,7 +9,7 @@ NOW="$(date +%F)"
 
 printf "lastCommitDate=%s now=%s\n" "$LAST_COMMIT_DATE" "$NOW"
 
-if [ "" -eq "$LAST_COMMIT_DATE" ]; then
+if [ -z "$LAST_COMMIT_DATE" ]; then
   echo "Nothing happened!"
   exit 1
 fi
