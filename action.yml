@@ -1,4 +1,4 @@
-name: 'Missing in Action'
+name: 'dev missing in action'
 description: 'check for developers MIA in the git log'
 author: 'nhomble'
 inputs:
