@@ -4,6 +4,9 @@ check for developers missing in action
 ## Usage
 This action provides a quick visual aide in small teams when you want quick feedback on who is actively contributing.
 
+## Troubleshooting
+When using the `actions/checkout` [GitHub action](https://github.com/actions/checkout), remember to checkout a reasonable amount of the git history. By default, the commit depth is just `1`.
+
 ### Example
 ```yml
 name: nhomble
